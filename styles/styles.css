@@ -4,13 +4,20 @@ body {
     margin: 0;
 }
 
-h1 {
-    color: #333;
+nav {
+    background-color: #396E94;
+    padding: 10px;
 }
 
 nav a {
+    color: white;
+    display: block;
+    padding: 15px;
     text-decoration: none;
-    padding: 10px;
+}
+
+h1 {
+    color: #396E94;
 }
 
 main {
