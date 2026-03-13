@@ -4,10 +4,31 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
 main {
     max-width: 840px;
     margin: 0 auto;
     padding: 20px;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #888;
+}
+
+p {
+    padding: 0;
 }
 
 aside {
@@ -15,17 +36,13 @@ aside {
     margin: 20px auto;
     border: 1px solid #ddd;
     padding: 20px;
-    background-color: #8d8d8d;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 aside img {
-    width: 100%;
+    width: 200px;
+    height: auto;
 }
 
 footer {
@@ -35,4 +52,5 @@ footer {
     text-align: center;
     padding: 25px;
     border-top: 1px solid #eee;
+    margin-top: 20px;
 }
