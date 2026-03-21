@@ -1,0 +1,159 @@
+header {
+    background-color: #ffffffcf;
+    color: rgba(255, 255, 255, 0.397);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+header img {
+    width: 100px;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    clear: both;
+    background-color: #007da5;
+    color: white;
+    padding: 25px;
+    margin-top: 0px;
+}
+
+/* SECTION 1: HERO */
+.hero {
+    position: relative;
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: rgba(76, 243, 255, 0.63);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(200, 29, 29, 0.7);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* SECTION 2: HISTORY*/
+.history {
+    color: #ffffff;
+    max-width: 2000px;
+    margin-top: 20px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.history h2 {
+    color: #ffffff;
+    text-align: left;
+    background-color: #5e16165c;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.history-text {
+    padding: 50px;
+    margin: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.272);
+}
+
+.history-text p {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.history-grid img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff5c;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*SECTION 3: ADVENTURE GALLERY*/
+.adventure {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff5c;
+    color: #000000;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #000000d8;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    clear: both;
+    background-color: #1b3a5a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #eee;
+    margin-top: 20px;
+}
+
+/*FOOTER SOCIAL MEDIA LINKS*/
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+}
