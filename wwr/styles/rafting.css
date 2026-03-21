@@ -1,36 +1,68 @@
+/* 1. UNIVERSAL SELECTOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. CSS VARIABLES*/
+:root {
+    --primary-color: #007da5;
+    --secondary-color: #1b3a5a;
+    --accent-color: #ffffffcf;
+    --heading-font: sans-serif;
+    --paragraph-font: sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+/* HEADER AND NAVIGATION */
 header {
-    background-color: #ffffffe7;
-    color: rgb(0, 0, 0);
+    background-color: var(--accent-color);
+    color: #000;
     padding: 15px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 header img {
     width: 100px;
 }
 
-body {
-    font-family: sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    clear: both;
-    background-color: #007da5;
-    color: white;
-    padding: 25px;
-    margin-top: 0px;
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--secondary-color);
 }
 
 /* SECTION 1: HERO */
 .hero {
     position: relative;
-    display: block;
 }
 
 .hero img {
     width: 100%;
     height: auto;
     display: block;
-    background-color: rgba(76, 243, 255, 0.63);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,6 +72,7 @@ body {
     right: 50px;
     background-color: rgba(200, 29, 29, 0.7);
     padding: 10px;
+    color: white;
 }
 
 .hero article {
@@ -48,112 +81,105 @@ body {
     left: 50px;
     width: 40%;
     background-color: rgba(0, 0, 0, 0.6);
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 20px;
 }
 
-/* SECTION 2: HISTORY*/
+.hero article img {
+    float: right;
+    width: 150px;
+    margin: 10px;
+}
+
+/* SECTION 2: HISTORY */
 .history {
-    color: #ffffff;
-    max-width: 2000px;
-    margin-top: 20px auto;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .history h2 {
-    color: #ffffff;
-    text-align: left;
     background-color: #5e16165c;
-    padding: 10px;
+    padding: 15px;
     border-bottom: 5px solid #333;
 }
 
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    align-items: center;
     gap: 20px;
-    width: 100%;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .history-text {
-    padding: 50px;
-    margin: 20px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.272);
-}
-
-.history-text p {
-    margin-bottom: 40px;
-    line-height: 1.6;
+    padding: 40px;
 }
 
 .history-grid img {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
-    display: block;
     margin: 20px auto;
-    padding: 15px;
+    padding: 10px;
     background-color: #ffffff5c;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*SECTION 3: ADVENTURE GALLERY*/
+/* SECTION 3: ADVENTURE GALLERY */
 .adventure {
     padding: 40px;
     text-align: center;
     background-color: #ffffff5c;
-    color: #000000;
+    color: #000;
 }
 
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .adventure-gallery figure {
     margin: 0;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #fff;
 }
 
 .adventure-gallery img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 figcaption {
     padding: 10px;
     font-weight: bold;
-    background-color: #000000d8;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
+    color: white;
 }
 
+/* FOOTER - Class name fixed to 'socialmedia' */
 footer {
-    clear: both;
-    background-color: #1b3a5a;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     padding: 25px;
-    border-top: 4px solid #eee;
     margin-top: 20px;
 }
 
-/*FOOTER SOCIAL MEDIA LINKS*/
-.sociallinks {
+.socialmedia {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 15px;
 }
 
-.sociallinks img {
-    width: 40px;
+.socialmedia img {
+    width: 35px;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.2);
 }
