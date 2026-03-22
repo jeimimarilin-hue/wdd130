@@ -25,7 +25,7 @@ body {
 /* HEADER AND NAVIGATION */
 header {
     background-color: var(--accent-color);
-    color: #000;
+    color: #121111;
     padding: 15px;
     display: grid;
     grid-template-columns: auto 1fr;
