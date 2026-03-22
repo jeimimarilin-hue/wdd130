@@ -1,8 +1,9 @@
-/* 1. UNIVERSAL SELECTOR */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #007da5;
+    --secondary-color: #1b3a5a;
+    --accent-color: #ffffffcf;
+    --heading-font: "Roboto", Helvetica, sans-serif;
+    --paragraph-font: "Open Sans", Arial, sans-serif;
 }
 
 h1,
@@ -12,6 +13,19 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+    color: var(--secondary-color);
+    /* Optional: using another variable */
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+/* 1. UNIVERSAL SELECTOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* 2. CSS VARIABLES*/
@@ -107,6 +121,7 @@ nav a:hover {
 }
 
 .history h2 {
+    color: #f2fdff;
     background-color: #5e16165c;
     padding: 15px;
     border-bottom: 5px solid #333;
