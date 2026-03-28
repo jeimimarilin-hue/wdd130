@@ -14,7 +14,6 @@ h5,
 h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-    /* Optional: using another variable */
 }
 
 p {
@@ -29,13 +28,6 @@ p {
 }
 
 /* 2. CSS VARIABLES*/
-:root {
-    --primary-color: #007da5;
-    --secondary-color: #1b3a5a;
-    --accent-color: #ffffffcf;
-    --heading-font: sans-serif;
-    --paragraph-font: sans-serif;
-}
 
 body {
     font-family: var(--paragraph-font);
@@ -182,7 +174,7 @@ figcaption {
     color: white;
 }
 
-/* FOOTER - Class name fixed to 'socialmedia' */
+/* FOOTER - Socialmedia */
 footer {
     background-color: var(--secondary-color);
     color: white;
