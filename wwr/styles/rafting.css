@@ -175,9 +175,14 @@ figcaption {
 }
 
 /*CONTACT PAGE - Location Section*/
-.contact-header h1,
-h2 {
+.contact-header h1 {
     color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-header h2 {
+    color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
 }
