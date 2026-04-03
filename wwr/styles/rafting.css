@@ -119,6 +119,17 @@ nav a:hover {
     border-bottom: 5px solid #333;
 }
 
+/* 4.48:1 and 3.35:1 contrast violations fixes */
+.contact-header h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-header h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,16 +186,6 @@ figcaption {
 }
 
 /*CONTACT PAGE - Location Section*/
-.contact-header h1 {
-    color: #ffffff !important;
-    text-align: center;
-}
-
-.contact-header h2 {
-    color: #ffec20 !important;
-    text-align: center;
-}
-
 .address {
     color: #ffffff;
     text-align: center;
@@ -342,6 +343,10 @@ legend {
     color: #000;
     text-align: center;
     border: 1px solid #ddd;
+}
+
+.team h2 {
+    color: var(--secondary-color);
 }
 
 .team-grid {
