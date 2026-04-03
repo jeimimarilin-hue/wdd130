@@ -7,11 +7,14 @@ body {
 nav {
     background-color: #396E94;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav a {
     color: white;
-    display: block;
+    display: inline-block;
     padding: 15px;
     text-decoration: none;
 }
@@ -60,4 +63,17 @@ footer {
     padding: 25px;
     border-top: 1px solid #eee;
     margin-top: 20px;
+}
+
+footer nav.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav.socialmedia img {
+    width: 35px;
+    height: auto;
+    border: none;
+    box-shadow: none;
 }
