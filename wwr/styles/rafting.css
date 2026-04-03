@@ -175,9 +175,13 @@ figcaption {
 }
 
 /*CONTACT PAGE - Location Section*/
-.contact-header h1,
-h2 {
-    color: #ffffff;
+.contact-header h1 {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+.contact-header h2 {
+    color: #ffec20 !important;
     text-align: center;
 }
 
@@ -269,7 +273,7 @@ h2 {
 .submit-button {
     width: 100%;
     padding: 12px;
-    background-color: #d7d7d7;
+    background-color: #ddd;
     color: #333;
     border: 1px solid #ccc;
     font-size: 1.1em;
