@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #007da5;
+    --primary-color: #00688b;
     --secondary-color: #1b3a5a;
     --accent-color: #ffffffcf;
     --heading-font: "Roboto", Helvetica, sans-serif;
@@ -175,13 +175,9 @@ figcaption {
 }
 
 /*CONTACT PAGE - Location Section*/
-.contact-header h1 {
+.contact-header h1,
+h2 {
     color: #ffffff;
-    text-align: center;
-}
-
-.contact-header h2 {
-    color: #410000;
     text-align: center;
 }
 
@@ -273,7 +269,7 @@ figcaption {
 .submit-button {
     width: 100%;
     padding: 12px;
-    background-color: #ddd;
+    background-color: #d7d7d7;
     color: #333;
     border: 1px solid #ccc;
     font-size: 1.1em;
@@ -322,7 +318,7 @@ legend {
 
 .contact-form h2 {
     text-align: center;
-    color: #132248;
+    color: var(--secondary-color);
     border-bottom: 10px;
 }
 
