@@ -176,15 +176,13 @@ figcaption {
 
 /*CONTACT PAGE - Location Section*/
 .contact-header h1 {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .contact-header h2 {
-    color: #ffffff;
+    color: #000000;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .address {
@@ -322,10 +320,17 @@ legend {
     border: 1px solid var(--secondary-color);
 }
 
+.contact-form h2 {
+    text-align: center;
+    color: #132248;
+    border-bottom: 10px;
+}
+
 .contact-form {
+    text-align: center;
     background-color: var(--accent-color);
     padding: 20px;
-    color: #000;
+    color: #000000;
     border: 1px solid var(--secondary-color);
 }
 
