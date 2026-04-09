@@ -458,6 +458,60 @@ legend {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* --- Newsletter Index page --- */
+.newsletter {
+    background-color: #1b405e;
+    color: white;
+    padding: 40px 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.newsletter h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.newsletter label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.newsletter button {
+    background-color: #fca311;
+    color: #1b405e;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.newsletter button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
 /*Trips page*/
 .trips-page main {
     background-image: url('../images/history_photo.jpg');
