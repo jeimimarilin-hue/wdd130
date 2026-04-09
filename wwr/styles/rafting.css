@@ -72,11 +72,13 @@ nav a:hover {
 /* SECTION 1: HERO */
 .hero {
     position: relative;
+    display: block;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
     display: block;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -102,17 +104,19 @@ nav a:hover {
 
 .hero article img {
     float: right;
-    width: 150px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
 }
 
 /* SECTION 2: HISTORY */
 .history {
-    max-width: 1200px;
+    max-width: auto;
     margin: 20px auto;
 }
 
 .history h2 {
+    margin-top: 10px;
     color: #f2fdff;
     background-color: #5e16165c;
     padding: 15px;
@@ -373,6 +377,195 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Index.html page*/
+.ihero {
+    position: relative;
+    display: block;
+}
+
+.ihero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.ihero-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.ihero-msg h1 {
+    color: rgb(122, 222, 0);
+}
+
+.btn-hero {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #72bf44;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-hero:hover {
+    background-color: #5a9a35;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.ihome-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.igrid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.igrid-item h3 {
+    color: #873a00 !important;
+    margin-top: 15px;
+}
+
+.igrid-item p {
+    color: #000000;
+}
+
+.igrid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Trips page*/
+.trips-page main {
+    background-image: url('../images/history_photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 2000px;
+}
+
+.trips-page .trips-table-container,
+.trips-page .thome-grid {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-intro h1 {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-intro {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-intro p {
+    color: #000000;
+}
+
+.trips-table-container table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #333;
+}
+
+.trips-table-container thead {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.trips-table-container th,
+.trips-table-container td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.trips-table-container table td:first-child {
+    background-color: #74c0ff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.trips-table-container tbody tr:nth-child(even) {
+    background-color: #def0ff;
+}
+
+.thome-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.tgrid-item {
+    margin-top: 10px;
+    background-color: #e7fdff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tgrid-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.tgrid-item p {
+    margin: 15px 0 10px;
+    color: black;
+}
+
+.tgrid-item h3 {
+    margin: 15px 0 10px;
+    color: var(--secondary-color);
 }
 
 /* FOOTER - Socialmedia */
